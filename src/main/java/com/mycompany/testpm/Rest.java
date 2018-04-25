@@ -5,6 +5,7 @@
  */
 package com.mycompany.testpm;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,7 +16,7 @@ import javax.ws.rs.Path;
  */
 
 @Path("re")
-public class Rest {
+public class Rest implements Serializable{
   
     @GET
     public String hora(){
